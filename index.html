@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>Welcome to Fitness Tracker</h1>
+            <p>Developer: Vivek</p>
+        </div>
+
+        <div class="main-content" id="mainContent" style="display: none;">
+            <h2 class="title">Fitness Tracker</h2>
+            <div class="buttons">
+                <button id="addGoalBtn">Add Goal</button>
+                <button id="viewProgressBtn">View Progress</button>
+                <button id="recordWorkoutBtn">Record Workout</button>
+                <button id="exitBtn">Exit</button>
+            </div>
+        </div>
+
+        <div class="set-goal-interface" id="setGoalInterface" style="display: none;">
+            <h2 class="title">Set Goals</h2>
+            <div class="goal-options">
+                <select id="goalSelect">
+                    <option value="" disabled selected>Select a goal</option>
+                    <option value="Running">Running</option>
+                    <option value="Yoga">Yoga</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Cycling">Cycling</option>
+                    <option value="Weight Lifting">Weight Lifting</option>
+                </select>
+            </div>
+            <button id="setGoalBtn">Set Goal</button>
+            <button id="backBtn">Back</button>
+        </div>
+
+        <div class="view-progress-interface" id="viewProgressInterface" style="display: none;">
+            <h2 class="title">Progress</h2>
+            <div class="goals-container" id="goalsContainer"></div>
+            <button id="backToMainBtn">Back</button>
+        </div>
+
+        <div class="record-workout-interface" id="recordWorkoutInterface" style="display: none;">
+            <h2 class="title">Record Workout</h2>
+            <div class="goal-status" id="goalStatus"></div>
+            <div class="completed-goals" id="completedGoalsContainer"></div>
+            <button id="resetBtn">Reset</button>
+            <button id="backToMainFromWorkoutBtn">Back</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
